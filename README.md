@@ -19,7 +19,7 @@ This code trains an image classifier model to classify chest X-ray images into t
 All the data for training, testing and validating the model as well as the trained classifiers are stored in S3 buckets.
 The model is trained using a pre-trained convolutional neural network (CNN) and transfer learning. 
 The hyperparameters of the model are tuned using Amazon SageMaker's Hyperparameter Tuning feature, which finds the best set of hyperparameters for the model by searching over a defined range of values with it's default Bayesian Search Optimization Technique. The training of the classifier is then logged and tracked from CloudWatch and CloudWatch Logs.
-Once the model is trained, it is deployed to an endpoint using Amazon SageMaker's deployment feature with API Gateway + Lambda Functions, and then used to make predictions on new chest X-ray images. 
+Once the model is trained, it is deployed to an endpoint using Amazon SageMaker's deployment feature with API Gateway + Lambda Functions, and then used to make predictions on new chest X-ray images.  
 
 <br>
 
